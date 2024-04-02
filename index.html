@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>personal portfolio</title>
+</head>
+<body>
+    <div class="header">
+        <div class="container">
+            <div class="navber">
+                <img src="logo.png" alt="Logo">
+               <ul>
+                   <li><a href="#">Home</a></li>
+                   <li><a href="#">About</a></li>
+                   <li><a href="#">Services</a></li>
+                   <li><a href="#">Portfolio</a></li>
+                   <li><a href="#">Contact</a></li>
+               </ul>
+               <div class="header-text">
+                   <p>UI/UX Designer</p>
+                   <h1>Hi, I'M <span>Ahmed Ali</span><br> Form Pakistan</h1>
+               </div>
+            </div>
+        </div>
+    </div>
+   <!-- <------------------about me------------------>
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="user.png">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam ut consectetur ipsam enim perferendis fuga voluptate aperiam sed error eum. Esse quaerat dolor suscipit commodi dolores praesentium beatae, iusto distinctio laboriosam sequi delectus. Officiis incidunt atque quibusdam? Fugit praesentium sapiente quos natus expedita voluptates, vero magni nostrum inventore a minus!</p>
+                    <div class="tab-title">
+                        <p class="tab-link active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-link" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-link" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-content active-tab" id="skills">
+                        <ul>
+                            <li><span>UI/UX</span><br>Designing Web/App interfaces</li>
+                            <li><span>Web Development</span><br>Web App Development</li>
+                            <li><span>App Development</span><br>Building Android/iOS apps</li>
+                        </ul>
+                    </div>
+                    <div class="tab-content" id="experience">
+                        <ul>
+                            <li><span>2021- current</span><br>UI/UX Design Traning at ET
+                            Institute</li>
+                            <li><span>2019-2021</span><br>Team Lead at StarApp LLC.</li>
+                            <li><span>2017- 2019</span><br>UI/UX Design Executive at Coin
+                            Digital Ltd.</li>
+                        </ul>
+                    </div>
+                    <div class="tab-content" id="education">
+                        <ul>
+                            <li><span>2016</span><br>UI/UX Design Traning at ET
+                                Institute</li>
+                            <li><span>2020</span><br>HSC  Form Karachi.</li>
+                            <li><span>2022</span><br>inter Form Sukkar.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontent = document.getElementsByClassName("tab-content");
+        function opentab(tabname){
+            for (tablinks of tablinks){
+                tablinks.classList.remove("active-link")
+            }
+        }
+            for (tabcontent of tabcontent){
+                tabcontent.classList.remove("active-tab")
+            } 
+        }
+    </script>
+</body>
+</html>
